@@ -1,0 +1,8 @@
+# Ignore local Obsidian UI settings and plugins
+.obsidian/workspace.json
+.obsidian/plugins/
+.obsidian/snippets/
+
+# System files
+.DS_Store
+Thumbs.db
