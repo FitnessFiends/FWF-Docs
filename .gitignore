@@ -6,3 +6,8 @@
 # System files
 .DS_Store
 Thumbs.db
+
+.obsidian/*
+!.obsidian/templates/
+!.obsidian/snippets/
+!.obsidian/workspace.json
