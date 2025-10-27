@@ -1,0 +1,141 @@
+Below is a list of all of the tables. Beside each 
+- Users Table
+	- Uid 
+		- Type: int
+		- Nullable: Not Nullable
+		- Note: auto increment. You do not need to submit a number the database will auto assign
+	- Fname
+		- Type: Text
+		- Nullable: Not Nullable
+	- Fname
+		- Type: Text
+		- Nullable: Not Nullable
+	- Pronouns
+		- Type: Text
+		- Nullable: Nullable
+		- Default Value: NULL
+ 
+  
+- Health_Info Table
+	- Uid 
+		- Type: int
+		- Nullable: Not Nullable
+	- Birthday
+		- Type: Text
+		- Nullable: Not Nullable
+	- Height
+		- Type: Float
+		- Nullable:  Nullable
+		- Default Value: NULL
+	- Weight
+		- Type: Float
+		- Nullable: Nullable
+		- Default Value: NULL
+	- Gender
+		-  Type: Text
+		- Nullable: Nullable
+		- Default Value: NULL
+	 
+  
+- Daily_Intake Table
+	- Uid 
+		- Type: int
+		- Nullable: Not Nullable
+	- Date
+		- Type: TimeStampTZ
+		- Nullable: Not Nullable
+		- Default Value: (now() AT TIME ZONE 'utc'::text)
+	- Carbs
+		- Type: Int
+		- Nullable:  Nullable
+		- Default Value: NULL
+	- Protein
+		- Type: Int
+		- Nullable: Nullable
+		- Default Value: NULL
+	- Fats
+		-  Type: Int
+		- Nullable: Nullable
+		- Default Value: NULL
+	- Calories
+		-  Type: Int
+		- Nullable: Nullable
+		- Default Value: NULL
+
+
+- Meal Table
+	- Uid 
+		- Type: int
+		- Nullable: Not Nullable
+	- MealTime
+		- Type: TimeStampTZ
+		- Nullable: Not Nullable
+		- Default Value: (now() AT TIME ZONE 'utc'::text)
+	- Carbs
+		- Type: Int
+		- Nullable:  Nullable
+		- Default Value: NULL
+	- Protein
+		- Type: Int
+		- Nullable: Nullable
+		- Default Value: NULL
+	- Fats
+		-  Type: Int
+		- Nullable: Nullable
+		- Default Value: NULL
+	- Calories
+		-  Type: Int
+		- Nullable: Nullable
+		- Default Value: NULL
+
+
+- Workout Table
+	- Uid 
+		- Type: int
+		- Nullable: Not Nullable
+	- WorkoutID 
+		- Type: int
+		- Nullable: Not Nullable
+		- Note: auto increment. You do not need to submit a number the database will auto assign
+	- StartTime
+		- Type: TimeStampTZ
+		- Nullable: Not Nullable
+		- Default Value: (now() AT TIME ZONE 'utc'::text)
+	- EndTime
+		- Type: TimeStampTZ
+		- Nullable: Not Nullable
+		- Default Value: (now() AT TIME ZONE 'utc'::text)
+	- WorkoutName
+		- Type: text
+		- Nullable: Nullable
+		- Default Value: NULL
+
+
+- Exercises Table
+	- WorkoutID 
+		- Type: int
+		- Nullable: Not Nullable
+		- Note: Foreign Key to Workouts Table
+	- StartTime
+		- Type: TimeStampTZ
+		- Nullable: Not Nullable
+		- Default Value: (now() AT TIME ZONE 'utc'::text)
+	- EndTime
+		- Type: TimeStampTZ
+		- Nullable: Not Nullable
+		- Default Value: (now() AT TIME ZONE 'utc'::text)
+	- ExerciseName
+		- Type: text
+		- Nullable: Not Nullable
+	- Sets
+		- Type: text
+		- Nullable: Nullable
+		- Default Value: NULL
+	- Reps
+		- Type: text
+		- Nullable: Nullable
+		- Default Value: NULL
+	- Weight
+		- Type: text
+		- Nullable: Nullable
+		- Default Value: NULL
