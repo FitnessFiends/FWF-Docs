@@ -89,6 +89,20 @@ Below is a list of all of the tables. Beside each
 		- Default Value: NULL
 
 
+- Meal Item Table
+	- MealID
+		- Type: int
+		- Nullable: NOT NULLABLE
+		- Note: Foreign key to the Meal table
+	- Name
+		- Type: text
+		- Nullable: NOT NULLABLE
+	- Calories
+		- Type: int
+		- Nullable: NOT NULLABLE
+		- Default Value: 0
+
+
 - Workout Table
 	- Uid 
 		- Type: int
