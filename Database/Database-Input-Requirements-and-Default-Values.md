@@ -123,6 +123,10 @@ Below is a list of all of the tables. Beside each
 		- Type: text
 		- Nullable: Nullable
 		- Default Value: NULL
+	- Calories_Burned
+		- Type: int
+		- Nullable: Nullable
+		- Default Value: 0
 
 
 - Exercises Table
